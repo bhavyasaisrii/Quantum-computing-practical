@@ -1,8 +1,0 @@
-from qiskit import *
-import matplotlib.pyplot as plt 
-
-qc = QuantumCircuit(1, 1)
-qc.h(0)
-qc.measure(0, 0)
-qc.draw('mpl')
-plt.show()
