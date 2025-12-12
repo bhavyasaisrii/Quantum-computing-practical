@@ -1,0 +1,13 @@
+from qiskit import *
+import matplotlib.pyplot as plt 
+qc = QuantumCircuit(3)
+
+qc.x(0)      # Pauli-X
+qc.h(1)      # Hadamard
+qc.z(2)      # Pauli-Z
+qc.cx(1, 2)  # CNOT
+qc.cz(0, 2)  # CZ gate
+qc.rx(0.5, 1) # Rotation gate
+
+qc.draw('mpl')
+plt.show()
